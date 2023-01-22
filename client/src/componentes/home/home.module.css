@@ -1,0 +1,397 @@
+.divaHome {
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  height: 85vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../../img/EstadioDeDia.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.divCarrusel {
+  /* border: 2px solid red;
+  object-fit: cover; 
+  height: 16rem;*/
+  position: relative;
+  top: 60px;
+}
+
+.divCarruselH2 {
+  border: 3px solid whitesmoke;
+  width: 32%;
+  position: relative;
+  top: -180px;
+  left: 66%;
+}
+
+.CarruselH2 {
+  font-size: 220%;
+  font-family: Ginebra;
+  position: relative;
+  left: 2%;
+  color: white;
+  display: block;
+  width: 100%;
+}
+.divSeparador {
+  border: 1px solid white;
+  height: 140px;
+}
+
+.divSeparadorPaginado {
+  position: relative;
+  top: 100px;
+}
+
+.imgGif {
+  min-width: 400px;
+  min-height: 250px;
+}
+.section {
+  display: grid;
+  padding: 20px;
+  justify-content: center;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: auto;
+
+  /*  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto; 
+  grid-gap: 1rem;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  padding-bottom: 2%; */
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.notFound img {
+  width: 200px;
+}
+
+.textoHero {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  left: 80px;
+}
+
+.imgHero {
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  right: 80px;
+  z-index: 100;
+  display: flex;
+}
+
+.messi {
+  width: 60%;
+}
+
+.extras {
+  width: 40%;
+}
+
+.img1 {
+  background-image: url("../../img/messi.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  z-index: 10;
+}
+
+.img11 {
+  width: 53%;
+  height: 90%;
+  position: absolute;
+  background-color: black;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.img2 {
+  background-image: url("../../img/img2.png");
+  width: 90%;
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  right: 20px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img3 {
+  background-image: url("../../img/img3.png");
+  width: 85%;
+  height: 35%;
+  background-position: center;
+  background-size: cover;
+  right: 30px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #222, 5px 5px 0 #000000b5, 5px 5px 5px #f2f2f2;
+}
+
+.hero p {
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.select {
+  --bg: #000;
+  --hover-bg: #ffffff;
+  --hover-text: #000;
+  color: #fff;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: bold;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.select:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.select:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+.textoHero button {
+  padding: 10px;
+  width: 200px;
+  outline: none;
+  border: 2px solid black;
+  background-color: white;
+  color: white;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  top: 50px;
+}
+
+.textoHero button::before {
+  content: "VER COLECCION";
+  /*Button's value/text-content */
+  position: absolute;
+  top: -14%;
+  left: 7%;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease-in-out;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.textoHero button:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.b {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .imgHero {
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    right: 3.5%;
+    top: 330px;
+    z-index: 100;
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 3px 3px 0 #222, 5px 5px 0 #000000b5, 5px 5px 5px #f2f2f2;
+  }
+
+  .textoHero {
+    position: absolute;
+    left: 9%;
+    top: 50px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .section {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    position: relative;
+    top: -22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .section {
+    display: grid;
+    padding: 10px;
+    gap: 15px;
+    justify-content: center;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: auto;
+  }
+
+  .messi {
+    position: relative;
+    left: 50%;
+  }
+
+  .img2 {
+    width: 307px;
+    height: 314px;
+    position: relative;
+    left: -240%;
+    top: 20%;
+  }
+
+  .img3 {
+    display: none;
+  }
+}
+/* 
+@media (min-width: 769px) and (max-width: 1200px) {
+  .section {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 1830px)  {
+ 
+.divCarruselH2{
+  border: 3px solid whitesmoke;
+  width: 580px;
+   position: relative;
+    top: -180px;
+    left: 56%;
+  }
+}
+
+@media (max-width: 1360px)  {
+ 
+  .divCarruselH2{
+    border: 3px solid black;
+    width: 50%;
+     position: relative;
+      top: 10px;
+      left: 25%;
+    }
+
+    
+.CarruselH2{
+  font-size: 170%;
+  font-family:  Ginebra;
+  position: relative;
+  left: 2%;
+  color: rgb(9, 9, 9);
+  display: block;
+  width: 100%;
+}
+
+.divSeparador{
+  height: 100px;
+}
+}
+
+
+@media (max-width: 835px)  {
+ 
+  .divCarruselH2{
+    border: 3px solid black;
+    width: 50%;
+     position: relative;
+      top: 10px;
+      left: 25%;
+    }
+
+    
+.CarruselH2{
+  font-size: 130%;
+  font-family:  Ginebra;
+  position: relative;
+  left: 2%;
+  color: rgb(9, 9, 9);
+  display: block;
+  width: 100%;
+}
+
+.divSeparador{
+  height: 100px;
+}
+}
+
+@media (max-width: 500px)  {
+ 
+  .divCarruselH2{
+    border: 3px solid black;
+    width: 50%;
+     position: relative;
+      top: 10px;
+      left: 25%;
+    }
+
+}
+
+}
+ */

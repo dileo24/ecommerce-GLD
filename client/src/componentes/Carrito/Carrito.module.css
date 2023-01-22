@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.cartCont {
+  background-color: white;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartCont2 {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  height: 95%;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  height: 5%;
+  margin-top: 40px;
+}
+
+.cartCont h1 {
+  margin-top: 7px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.totalCont {
+  position: fixed;
+  width: 20%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalCont button {
+  width: 30%;
+}
+
+.cardsProd {
+  width: 80%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+}
+
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-top: 25px;
+  position: absolute;
+  left: 3%;
+}
+
+.limpiar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  right: 5%;
+  position: absolute;
+  /* position: absolute;
+  top: 15%;
+  right: 10%; */
+  font-weight: 500;
+}
+
+.total {
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
+  /* position: absolute;
+  top: 45%;
+  right: 3%; */
+}
+
+.total p {
+  font-size: 30px;
+  width: 100%;
+  font-weight: bold;
+  /* right: -290%; */
+}
+
+.pagar {
+  width: 50%;
+  border-radius: 5px;
+  /* position: absolute;
+  top: 55%;
+  right: 10%; */
+  font-weight: 500;
+}
+
+.totalFinal {
+  display: none;
+}
+
+.recuadroTotal {
+}
+
+.boton {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .search {
+    display: none;
+  }
+
+  .cartCont {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cartCont2 {
+    width: 100%;
+  }
+
+  .totalCont {
+    display: none;
+  }
+
+  .cartCont h1 {
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 10px;
+  }
+
+  .limpiar {
+    padding: 3px 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+  }
+
+  .totalFinal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .cardsProd {
+    width: 100%;
+  }
+
+  .total {
+    display: none;
+  }
+
+  .pagar {
+    display: none;
+  }
+
+  .total2 p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .pagar2 {
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1700px) {
+  .pagar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 60px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+
+  .totalCont {
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1700px) {
+  .cardsProd {
+    display: flex;
+    justify-content: left;
+  }
+}
