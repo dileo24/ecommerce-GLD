@@ -51,9 +51,9 @@ const { Producto, Categoria, Client } = sequelize.models;
 Producto.belongsToMany(Categoria, { through: "product_category" });
 Categoria.belongsToMany(Producto, { through: "product_category" });
 
-/* const Favorito = sequelize.define("Favorito", {}, { timestamps: false });
+const Favorito = sequelize.define("Favorito", {}, { timestamps: false });
 Client.belongsToMany(Producto, { through: Favorito });
-Producto.belongsToMany(Client, { through: Favorito }); */
+Producto.belongsToMany(Client, { through: Favorito });
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
