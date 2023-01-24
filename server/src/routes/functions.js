@@ -7,15 +7,11 @@ const { Categoria, Producto } = require("../db.js");
 const getCategories = async () => {
   const a = await Categoria.findAll();
   if (a.length === 0) {
-    /* const response = await fetch(
-      "https://ecommerce-gld-default-rtdb.firebaseio.com/.json"
-    ); */
-    const response = await fetch(
+    const response = await axios.get(
       "https://ecommerce-gld-default-rtdb.firebaseio.com/.json"
     );
-    /* let commits = await response; */
 
-    let category = await response.Productos.map((e) => e.categoria);
+    let category = response.data.Productos.map((e) => e.categoria);
     const categoryArr = new Set(category);
     let result = [...categoryArr];
 
