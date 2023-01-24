@@ -12,8 +12,8 @@ const getCategories = async () => {
     );
 
     let category = response.data.Productos.map((e) => e.categoria);
-    const categoryArr = new Set(category);
-    let result = [...categoryArr];
+
+    let result = [...category];
 
     result.forEach(async (e) => {
       const [category, created] = await Categoria.findOrCreate({
