@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const { Categoria } = require("../db.js");
-const { getCategories } = require("./functions");
+const { getCategories } = require("./controllersFunctions");
 const categoryRouter = Router();
 
 categoryRouter.get("/", async (req, res) => {
